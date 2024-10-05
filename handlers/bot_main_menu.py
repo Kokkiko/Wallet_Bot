@@ -1,7 +1,7 @@
 import time, uuid, requests
-from Wallet_Bot.wallet_functions import *
-from Wallet_Bot.utils import *
-from Wallet_Bot.data import *
+from wallet_functions import *
+from utils import *
+from data import *
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode
 
 def main_menu(update, context):
@@ -14,18 +14,14 @@ def main_menu(update, context):
 
     user = context.user_data
 
-    print('hui', user)
     user["user_address"] = address
     user["user_private"] = private
     if not user_query:
-        print("zZZDESSS" "")
         connector.connect()
         cursor.execute("SELECT telegram_id from users")
         users = str(cursor.fetchall())
         user["input"] = 0
         user["page"] = 0
-        user["telegram_id"] = user_telegram_id
-        print(users)
 
         if user_telegram_id not in str(users):
             print(user_telegram_id)
