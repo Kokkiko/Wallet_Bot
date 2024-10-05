@@ -7,8 +7,8 @@ from telegram.ext import (
 )
 
 # from Wallet_Bot.handlers.bot_start_menu import start
-from Wallet_Bot.handlers.bot_main_menu import main_menu
-from Wallet_Bot.handlers.bot_menu2 import menu_handler_2
+from handlers.bot_main_menu import main_menu
+from handlers.bot_menu2 import menu_handler_2
 
 
 TOKEN = "6539624111:AAGKngaVGJaMkAFL0MSa0u_rrhI9dw1kUIM"

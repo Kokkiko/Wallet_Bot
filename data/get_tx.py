@@ -1,5 +1,5 @@
-from Wallet_Bot.utils.sort_alg import sort_pages
-from Wallet_Bot.data.data_base_connect import cursor, connector
+from utils.sort_alg import sort_pages
+from data.data_base_connect import cursor, connector
 def get_tx(id):
         print('id',id)
         connector.connect()

@@ -1,6 +1,6 @@
 import time
 from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ParseMode
-from Wallet_Bot.wallet_functions.FinanceEngine import w3, getBalance
+from wallet_functions.FinanceEngine import w3, getBalance
 
 
 def menu_handler_2(update, context):

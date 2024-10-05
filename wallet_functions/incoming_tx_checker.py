@@ -1,6 +1,6 @@
 import requests, binascii
-from Wallet_Bot.wallet_functions.FinanceEngine import w3
-from Wallet_Bot.data.data_base_connect import cursor
+from wallet_functions.FinanceEngine import w3
+from data.data_base_connect import cursor
 
 
 # начало цикла
